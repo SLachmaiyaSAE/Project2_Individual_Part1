@@ -5,9 +5,9 @@ using UnityEngine;
 public class GroundSpawnScript : MonoBehaviour
 {
     public GameObject ground;
-    public float spawnRate = 10;
+    public float spawnRate = 2;
     private float timer = 0;
-    public float heightOffset = 3;
+    public float heightOffset = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +35,7 @@ public class GroundSpawnScript : MonoBehaviour
             float lowestPoint = transform.position.y - heightOffset;
             float highestPoint = transform.position.y + heightOffset;
 
-            Instantiate(ground, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
+            Instantiate(ground, new Vector3(transform.position.x, Random.Range(lowestPoint = -2, highestPoint = 4), 0), transform.rotation);
         }
     }
 }

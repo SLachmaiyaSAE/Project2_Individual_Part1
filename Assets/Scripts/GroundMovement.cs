@@ -6,6 +6,7 @@ public class GroundMovement : MonoBehaviour
 {
 
     public float moveSpeed = 2;
+    public float deadZone = -200;
 
 
     // Start is called before the first frame update
@@ -18,5 +19,6 @@ public class GroundMovement : MonoBehaviour
     void Update()
     {
         transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
+
     }
 }
