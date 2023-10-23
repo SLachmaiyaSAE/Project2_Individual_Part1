@@ -6,6 +6,10 @@ TagManager:
   tags:
   - ground
   - platform
+  - destroy
+  - addscore
+  - Logic
+  - enemy
   layers:
   - Default
   - TransparentFX
