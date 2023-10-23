@@ -17,6 +17,15 @@ public class Logic : MonoBehaviour
         scoreText.text = playerScore.ToString();
     }
 
+    public void Update()
+    {
+        if(playerScore == 10) 
+        {
+            Time.timeScale = 0;
+            Debug.Log("you win");
+        }
+    }
+
     public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

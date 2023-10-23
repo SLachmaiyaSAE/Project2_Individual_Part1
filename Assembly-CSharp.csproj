@@ -58,9 +58,15 @@
     <Analyzer Include="C:\Program Files\Unity 2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GroundMovement.cs" />
     <Compile Include="Assets\Scripts\GroundSpawnScript.cs" />
+    <Compile Include="Assets\Scripts\Destroy.cs" />
+    <Compile Include="Assets\Scripts\Logic.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\HatersMovement.cs" />
+    <Compile Include="Assets\Scripts\GroundMovement.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\RiRiSpawn.cs" />
+    <Compile Include="Assets\Scripts\RiRiCollect.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
