@@ -30,5 +30,10 @@ public class RiRiMovement : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (gameObject.CompareTag("haters"))
+        {
+           Destroy(gameObject);
+        }
     }
 }

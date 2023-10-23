@@ -10,6 +10,7 @@ TagManager:
   - addscore
   - Logic
   - enemy
+  - haters
   layers:
   - Default
   - TransparentFX

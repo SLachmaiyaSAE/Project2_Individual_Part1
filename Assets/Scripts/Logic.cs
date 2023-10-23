@@ -22,18 +22,9 @@ public class Logic : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //   gameOverScreen.SetActive(true);
-    //}
-
-
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.CompareTag("enemy"))
-        {
-            gameOverScreen();
-        }
+        gameOverScreen.SetActive(true);
     }
 
 }
